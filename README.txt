@@ -2,6 +2,29 @@ README for Spark Streaming
 
 Objective : 
 This document explains how the jar file 'assign3.jar' was executed on AWS EMR to monitor an HDFS folder, generate outputs for Tasks A, B, and C, and how the outputs were verified.
+This project implements a real-time streaming analytics pipeline using Apache Spark Streaming in Scala. It monitors an HDFS directory and processes incoming text files at 3-second intervals to perform:
+
+- **Word Frequency Counting** (Task A)
+- **Word Co-occurrence Frequency** (Task B)
+- **Stateful Co-occurrence Frequency Updates** (Task C)
+
+## Features
+
+- Cleans and filters input (removes non-alphabetic and short words)
+- Tracks word-level statistics per batch
+- Maintains running totals using `updateStateByKey`
+- Outputs results to HDFS with sequential suffixes (e.g., `taskA-001`)
+- Fully configurable input/output paths via command-line arguments
+
+## Technologies Used
+
+- Apache Spark (Streaming)
+- Scala
+- HDFS (Hadoop Distributed File System)
+
+## Directory Structure
+
+
 
 Steps to Execute the Job and Verify Output :
 

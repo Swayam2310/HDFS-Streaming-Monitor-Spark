@@ -22,9 +22,6 @@ This project implements a real-time streaming analytics pipeline using Apache Sp
 - Scala
 - HDFS (Hadoop Distributed File System)
 
-## Directory Structure
-
-
 
 Steps to Execute the Job and Verify Output :
 
